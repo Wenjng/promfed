@@ -4,4 +4,4 @@ VOLUME /tmp
 
 COPY target/*.jar promfed.jar
 
-ENTRYPOINT ["java", "-jar", promfed.jar"]
+ENTRYPOINT ["java", "-jar", "promfed.jar"]
