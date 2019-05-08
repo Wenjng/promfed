@@ -10,10 +10,10 @@ This is a springboot project for practicing with webflux and test the setup for 
 
 ## cheetsheet:
 
-# Run
+### Run
     * mvn spring-boot:run
     * mvn clean package; docker build -t promfed; docker run -p 8080:8080 promfed
-# check
+### check
     * localhost/hello - show a hello message
     * localhost/runner/99 - another get method
     * localhost/actuator  - list of endpoints, like health, info, metrics, prometheus,etc
