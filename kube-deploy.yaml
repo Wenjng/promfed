@@ -1,0 +1,17 @@
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: my-promfed
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: promfed
+    spec:
+      containers:
+        - name: promfed
+          image: hewenjing99/mypromfed:v2
+          ports:
+            - containerPort: 8080
