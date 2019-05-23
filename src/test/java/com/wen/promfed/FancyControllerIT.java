@@ -25,8 +25,8 @@ class FancyControllerIT {
 
     @Test
     public void getHelloMessage() throws Exception {
-        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post("/hello")
-                .with(user("user123"))
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/hello")
+                .with(user("user123"))    // this 2 lines tell system to mock security
                 .with(csrf())
                 .contentType(MediaType.TEXT_PLAIN)
                 .accept(MediaType.TEXT_PLAIN))
