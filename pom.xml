@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.wen</groupId>
 	<artifactId>promfed</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>promfed</name>
 	<description>Demo project for Spring Boot</description>
@@ -105,5 +106,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
